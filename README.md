@@ -15,6 +15,7 @@
 - 📚 Supports `push`, `pop`, and `popToRoot` out of the box
 - 🧱 Each flow can have its own router
 - 🛠️ Ready for dependency injection
+- 📲 Example App Included
 - 📦 Future support for `.present` navigation
 
 ---
@@ -195,12 +196,25 @@ final class OrdersRouter: SwiftUINavigationRouterProtocol { ... }
 
 ---
 
+## 📱 Example App
+
+A basic working example is available inside the [`ExampleApp`](./ExampleApp) folder.  
+This mini app demonstrates how to:
+
+- Create a router for a feature flow
+- Push and pop views using the router
+- Display views based on enum-driven navigation
+
+You can open the folder with Xcode and run it on the simulator to see `SwiftUINavigationRouter` in action as a local package.
+
+---
+
 ## 🚧 Roadmap
 
 - [x] Support for push-based navigation
 - [x] Built-in support for `pop` and `popToRoot`
+- [X] Sample app
 - [ ] `present` and `dismiss` API (coming soon)
-- [ ] Sample app with advanced navigation flows
 - [ ] Full integration with dependency injection containers
 
 ---
