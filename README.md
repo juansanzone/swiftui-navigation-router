@@ -255,8 +255,9 @@ You can open the folder with Xcode and run it on the simulator to see `SwiftUINa
 - [x] Support for push-based navigation
 - [x] Built-in support for `pop` and `popToRoot`
 - [X] Sample app
-- [ ] `present` and `dismiss` API (coming soon)
+- [X] Automatic Injection: The router is automatically injected into your stack views using SwiftUI's EnvironmentObject.
 - [ ] Full integration with dependency injection containers
+- [ ] `present` and `dismiss` API (coming soon)
 
 ---
 
