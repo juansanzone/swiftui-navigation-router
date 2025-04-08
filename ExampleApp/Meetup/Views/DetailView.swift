@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct DetailView: View {
-    
     @EnvironmentObject var router: Router
     
     var body: some View {

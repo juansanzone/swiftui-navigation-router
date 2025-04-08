@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct SuccessView: View {
-    
     @EnvironmentObject var router: Router
+    
     let paymentID: String
     
     var body: some View {
