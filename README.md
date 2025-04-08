@@ -196,6 +196,47 @@ final class OrdersRouter: SwiftUINavigationRouterProtocol { ... }
 
 ---
 
+## ☝️ One more thing...
+
+### 🚀 Simplify Your Navigation with `NavigationRouterView`
+
+**Bored and tired of repeatedly defining `navigationDestination` everywhere?** Let `NavigationRouterView` handle everything for you!
+
+### 🎯 Why `NavigationRouterView`?
+
+- ✅ **Simplified Setup**: Define your navigation logic once and reuse it effortlessly across your app.
+- ✅ **Cleaner Code**: No more repetitive `navigationDestination` setups cluttering your SwiftUI views.
+- ✅ **Easy Maintenance**: Centralized routing makes your navigation easy to maintain and scale.
+
+### ⚙️ How Does It Work?
+
+`NavigationRouterView` uses a simple yet powerful protocol `NavigationRouterProtocol`, which lets you define navigation paths and corresponding views neatly in one place.
+
+### Set Up `NavigationRouterView`
+
+Simplify your view by embedding it within `NavigationRouterView`:
+
+```swift
+struct HomeView: View {
+    @StateObject private var router = MyRouter()
+
+    var body: some View {
+        NavigationRouterView(router: router) {
+            VStack {
+                Button("Push Detail View") {
+                    router.push(screen: .detailView)
+                }
+            }
+            .navigationTitle("Home")
+        }
+    }
+}
+```
+
+That's it! 🎉 Now your navigation is cleaner, modular, and easier than ever!
+
+---
+
 ## 📱 Example App
 
 A basic working example is available inside the [`ExampleApp`](./ExampleApp) folder.  
